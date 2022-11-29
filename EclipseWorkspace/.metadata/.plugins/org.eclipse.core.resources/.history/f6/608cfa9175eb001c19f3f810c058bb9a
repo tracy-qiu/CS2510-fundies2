@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import tester.Tester;
+
+//represents a bank account
+class BankAccount {
+  int balance; // number of dollars in account
+
+  BankAccount() {
+    this.balance = 0;
+  }
+
+  BankAccount(int dollars) {
+    this.balance = dollars;
+  }
+
+  //EFFECT: adds the given amount to this account's balance. amount may be negative
+  void process(int amount) {
+    this.balance = this.balance + amount;
+  }
+
+  int balance() {
+    return this.balance;
+  }
+}
+
+class Utils {
+
+  void processTransactions(BankAccount ba, ArrayList<ArrayList<Integer>> backup) {
+    for (ArrayList<Integer> al : backup) {
+      for (Integer i : al) {
+        ba.process(i);
+      }
+    }
+  }
+
+  boolean anyRepeats(ArrayList<BankAccount> accounts) {
+    for (int i = 0; i < accounts.size(); i++) {
+      for (int j = 0; j < accounts.size(); j++) {
+        if (!(i == j)) {
+          if (accounts.get(i) == accounts.get(j)) {
+            return true;
+          }
+        }
+      }
+    }
+    return false;
+  }
+}
+
+class ExamplesBankAccounts {
+  BankAccount ba1 = new BankAccount(10);
+  ArrayList<Integer> i1 = new ArrayList<Integer>(Arrays.asList(1, 2));
+  ArrayList<Integer> i2 = new ArrayList<Integer>(Arrays.asList(2, 4, 6));
+  ArrayList<Integer> i3 = new ArrayList<Integer>(Arrays.asList(3, 5));
+
+  ArrayList<ArrayList<Integer>> aal = new ArrayList<ArrayList<Integer>>(Arrays.asList(i1, i2, i3));
+
+  Utils u = new Utils();
+
+  void testProcessTransactions(Tester t) {
+    u.processTransactions(ba1, aal);
+
+    t.checkExpect(ba1.balance(), 33);
+  }
+}

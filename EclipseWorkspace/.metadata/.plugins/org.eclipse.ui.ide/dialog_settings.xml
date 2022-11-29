@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/tracyqiu/Desktop/CS2510-fundies2/EclipseWorkspace/testlab3"/>
+			<item value="/Users/tracyqiu/Desktop/CS2510-fundies2/EclipseWorkspace/Lab1"/>
+			<item value="/Users/tracyqiu/Desktop/CS2510-fundies2/EclipseWorkspace/Lab2"/>
+			<item value="/Users/tracyqiu/Desktop/CS2510-fundies2/EclipseWorkspace/Lab3"/>
+			<item value="/Users/tracyqiu/Desktop/CS2510-fundies2/EclipseWorkspace/Assignment1"/>
+			<item value="/Users/tracyqiu/Desktop/CS2510-fundies2/EclipseWorkspace/Assignment2"/>
+			<item value="/Users/tracyqiu/Desktop/CS2510-fundies2/EclipseWorkspace/Assignment3"/>
+			<item value="/Users/tracyqiu/Desktop/CS2510-fundies2/EclipseWorkspace"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="294"/>
+		<item key="DIALOG_Y_ORIGIN" value="22"/>
+		<item key="DIALOG_WIDTH" value="586"/>
+		<item key="DIALOG_HEIGHT" value="528"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

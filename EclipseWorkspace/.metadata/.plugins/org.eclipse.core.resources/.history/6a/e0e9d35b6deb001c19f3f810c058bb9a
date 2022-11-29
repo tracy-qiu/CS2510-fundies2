@@ -1,0 +1,44 @@
+import java.util.ArrayList;;
+
+//represents a bank account
+class BankAccount {
+  int balance; // number of dollars in account
+
+  BankAccount() {
+    this.balance = 0;
+  }
+
+  BankAccount(int dollars) {
+    this.balance = dollars;
+  }
+
+  //EFFECT: adds the given amount to this account's balance. amount may be negative
+  void process(int amount) {
+    this.balance = this.balance + amount;
+  }
+}
+
+class Utils {
+
+  void processTransactions(BankAccount ba, ArrayList<ArrayList<Integer>> backup) {
+    for (ArrayList<Integer> al : backup) {
+      for (Integer i : al) {
+        ba.balance = ba.balance + i;
+      }
+    }
+  }
+
+  boolean anyRepeats(ArrayList<BankAccount> accounts) {
+    for (int i = 0; i < accounts.size(); i++) {
+      for (int j = 0; j < accounts.size(); j++) {
+        if (!(i == j)) {
+          if (accounts.get(i) == accounts.get(j)) {
+            return true;
+          }
+        }
+      }
+    }
+    return false;
+  }
+
+}

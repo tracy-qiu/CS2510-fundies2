@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.function.Predicate;
+
+
+class AllPredicates<T> implements Predicate<T> {
+  ArrayList<Predicate<T>> predArr; 
+  
+  AllPredicates(ArrayList<Predicate<T>> predArr) {
+    this.predArr = predArr;
+  }
+  
+  @Override 
+  public boolean test(T t) {
+    for (Predicate<T> pred: predArr) {
+      if (!pred.test(t)) {
+        return false;
+      }
+    }
+    return true;
+  }
+}

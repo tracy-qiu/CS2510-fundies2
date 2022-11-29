@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+//represents a customer at the bank
+class Customer {
+  String name;
+  
+  
+  ArrayList<Integer> pin; //a secret code for a customer to login
+
+  Customer(String name, ArrayList<Integer> pin) {
+    this.name = name;
+    this.pin = pin;
+  }
+
+  //reset the pin number of this customer
+  void resetPin(int n0, int n1, int n2, int n3) {
+    this.pin.set(0, n0);
+    this.pin.set(1, n1);
+    this.pin.set(2, n2);
+    this.pin.set(3, n3);
+ }
+}

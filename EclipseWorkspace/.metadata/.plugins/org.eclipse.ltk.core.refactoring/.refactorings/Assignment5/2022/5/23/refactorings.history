@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;newInvaderBullets&apos; in &apos;SpaceInvaders.onTick()&apos; to &apos;updatedBullets&apos;&#x0A;- Original project: &apos;Assignment5&apos;&#x0A;- Original element: &apos;SpaceInvaders.onTick().newInvaderBullets&apos;&#x0A;- Renamed element: &apos;newInvaderBullets&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;newInvaderBullets&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{SIChange1v2.java[SpaceInvaders~onTick@newInvaderBullets!17644!17700!17659!17675!QIList\&lt;QICartPt;&gt;;!0!false" name="updatedBullets" references="true" stamp="1653971628166" version="1.0"/>
+</session>
